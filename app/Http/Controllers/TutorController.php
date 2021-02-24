@@ -56,7 +56,8 @@ class TutorController extends Controller
       
             $tutores = new Tutores([
                 'first_name' => $request->get('first_name'),
-                'last_name' => $request->get('last_name'),
+                'last_name1' => $request->get('last_name1'),
+                'last_name2' => $request->get('last_name2'),
                 'company'=>$request->get('company'),
                 'type_document'=>$request->get('type_document'),
                 'document'=>$request->get('document'),
@@ -64,7 +65,7 @@ class TutorController extends Controller
                 'province'=>$request->get('province'),
                 'municipe'=>$request->get('municipe'),
                 'status'=>$request->get('status'),
-                'telephone'=>$request->get('comptelephoneany'),
+                'telephone'=>$request->get('telephone'),
                 'email'=>$request->get('email')
             ]);
             $tutores->save();

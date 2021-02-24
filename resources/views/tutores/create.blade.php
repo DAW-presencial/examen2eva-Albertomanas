@@ -25,6 +25,10 @@
              <input type="text" class="form-control" name="type_document" value="{{ old('type_document') }}" placeholder="DNI" />
          </div>
          <div class="form-group">   
+             <label for="document">Documento</label>
+             <input type="text" class="form-control" name="document" value="{{ old('document') }}" placeholder="45637293P" />
+         </div>
+         <div class="form-group">   
              <label for="first_name">Nombre</label>
              <input type="text" class="form-control" name="first_name" value="{{ old('first_name') }}" placeholder="Alberto" />
          </div>
@@ -57,7 +61,7 @@
              <input type="number" class="form-control" name="telephone" value="{{ old('telephone') }}" placeholder="608234793" />
          </div>
          <div class="form-group">   
-             <label for="email">Telefono</label>
+             <label for="email">email</label>
              <input type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="amanas@cifpfbmoll.eu" />
          </div>
          <button type="submit" class="btn btn-primary-outline">Add contact</button>
