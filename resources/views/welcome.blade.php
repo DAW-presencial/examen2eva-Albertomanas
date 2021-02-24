@@ -24,13 +24,12 @@
               <a class="nav-link" href="{{ url('/') }}">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="{{ url('/form') }}">Form</a>
+              <a class="nav-link" href="{{ url('/tutores') }}">Tutores</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="{{ url('/tutores/create') }}">Crear tutor</a>
             </li>
           </ul>
-          <nav class="my-2 my-md-0 mr-md-3">
-          <a class="btn btn-outline-primary p-1" href="{{ url('/login') }}">Login</a>
-          <a class="btn btn-outline-primary p-1" href="{{ url('/register') }}">Register</a>
-          </nav>
         </div>
       </nav>
     </header>

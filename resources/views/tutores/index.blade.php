@@ -54,5 +54,14 @@
    </tbody>
  </table>
 <div>
+  <a style="margin: 19px;" href="{{ route('tutores.create')}}" class="btn btn-primary">Añadir tutores</a>
+</div>
+  <!-- mensaje de éxito cuando funcionan los métodos de API CRUD -->
+  <div class="col-sm-12">
+ @if(session()->get('success'))
+ <div class="alert alert-success">
+     {{ session()->get('success') }}
+ </div>
+ @endif
 </div>
 @endsection
